@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Excerpt | The Athenaeum</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>Submit an Excerpt</h1>
+        <p>Share Your Favorite Book Quote</p>
+    </header>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="excerpts.html">Excerpts Archive</a></li>
+            <li><a href="about.html">About Team</a></li>
+            <li><a href="contact.html" class="active">Submit Excerpt</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        
+        <h2>Excerpt Submission Form</h2>
+        <p>Fill out the form below to suggest a book quote for our site archive.</p>
+
+        <!-- Mandatory Form Component -->
+        <form id="contact-form" action="#" method="post">
+            
+            <div class="form-group">
+                <label for="user-name">Your Name:</label>
+                <input type="text" id="user-name" name="userName" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user-email">Your Email Address:</label>
+                <input type="email" id="user-email" name="userEmail" class="form-input" placeholder="e.g. student@astanait.edu.kz" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Book Category (Dropdown):</label>
+                <select id="category" name="category" class="form-input" required>
+                    <option value="" disabled selected>-- Select a Category --</option>
+                    <option value="classic">Classic Realism</option>
+                    <option value="detective">Detective Fiction</option>
+                    <option value="philosophy">Philosophy &amp; Logic</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="favorite-color">Pick Your Favorite Theme Accent (Color Picker):</label>
+                <input type="color" id="favorite-color" name="favoriteColor" value="#8a9a86" class="form-input" style="height: 40px; padding: 2px;">
+            </div>
+
+            <div class="form-group">
+                <label for="book-info">Book Title &amp; Author:</label>
+                <input type="text" id="book-info" name="bookInfo" class="form-input" placeholder="e.g. Crime and Punishment by Fyodor Dostoevsky" required>
+            </div>
+
+            <div class="form-group">
+                <label for="excerpt-text">Book Quote &amp; Brief Reflection (Textarea):</label>
+                <textarea id="excerpt-text" name="excerptText" rows="5" class="form-input" placeholder="Paste quote here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Excerpt</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Athenaeum Project. Front-End Development Assignment #1.</p>
+        <p>Created by: <strong>Akerke</strong> &amp; <strong>Aruzhan</strong> | Group: SE-2402 | Astana IT University</p>
+    </footer>
+
+</body>
+</html>

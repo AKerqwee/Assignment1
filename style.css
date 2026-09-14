@@ -1,0 +1,218 @@
+/* ==========================================================================
+   THE ATHENAEUM - SIMPLE & CLEAN DARK MORANDI STYLESHEET
+   Shared External CSS for Assignment #1
+   ========================================================================== */
+
+/* 1. ELEMENT SELECTORS (基类/元素选择器: 作用于全局基础标签) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1e2022; /* 莫兰迪暗暗灰色背景 */
+    color: #e0ded9;            /* 柔和羊皮纸白色字体 */
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    color: #d4cecb;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #8a9a86; /* 莫兰迪鼠尾草绿 */
+}
+
+h3 {
+    font-size: 18px;
+    color: #b88a84; /* 莫兰迪柔粉色 */
+}
+
+p {
+    margin-bottom: 15px;
+    color: #c5c2bc;
+}
+
+a {
+    color: #8a9a86;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #b88a84;
+}
+
+/* 2. ID SELECTORS (ID选择器: 作用于特定唯一元素) */
+#main-header {
+    background-color: #141517;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #33363a;
+}
+
+#main-nav {
+    background-color: #25282c;
+    border-top: 1px solid #33363a;
+    border-bottom: 1px solid #33363a;
+    padding: 10px 0;
+}
+
+#contact-form {
+    background-color: #25282c;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #33363a;
+    max-width: 600px;
+}
+
+/* 3. CLASS SELECTORS (类选择器: 可复用的组件样式) */
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.card {
+    background-color: #25282c;
+    border: 1px solid #33363a;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.quote-box {
+    border-left: 3px solid #b88a84;
+    padding-left: 15px;
+    font-style: italic;
+    margin: 15px 0;
+    color: #e0ded9;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* 圆形图片要求 */
+    border: 2px solid #8a9a86;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+/* 4. DESCENDANT SELECTORS (后代选择器: 作用于特定父级内部的子元素) */
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#main-nav ul li a {
+    color: #b5b0a8;
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+#main-nav ul li a:hover,
+#main-nav ul li a.active {
+    background-color: #33363a;
+    color: #8a9a86;
+    border-radius: 4px;
+}
+
+/* 表格样式 (Data Table Styling) */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #25282c;
+}
+
+.data-table th, 
+.data-table td {
+    border: 1px solid #33363a;
+    padding: 12px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #18191b;
+    color: #8a9a86;
+}
+
+/* 表单组件样式 (Form Input Styling) */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #b5b0a8;
+    font-size: 14px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    background-color: #18191b;
+    border: 1px solid #33363a;
+    color: #e0ded9;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #8a9a86;
+}
+
+.btn-submit {
+    background-color: #8a9a86;
+    color: #18191b;
+    border: none;
+    padding: 10px 24px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #9ab096;
+}
+
+/* 列表与页脚 (Lists & Footer) */
+ul.simple-list, ol.simple-list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul.simple-list li, ol.simple-list li {
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: #141517;
+    border-top: 1px solid #33363a;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #888;
+}

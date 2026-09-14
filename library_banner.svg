@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <rect width="800" height="200" fill="#25282c"/>
+  <rect x="15" y="15" width="770" height="170" fill="none" stroke="#33363a" stroke-width="2"/>
+  <text x="400" y="95" fill="#8a9a86" font-family="Georgia, serif" font-size="22" text-anchor="middle">THE ATHENAEUM ARCHIVE</text>
+  <text x="400" y="130" fill="#c5c2bc" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle">Simple &amp; Minimalist Book Excerpts</text>
+</svg>
